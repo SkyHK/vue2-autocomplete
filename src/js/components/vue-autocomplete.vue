@@ -1,9 +1,9 @@
 
 <template>
-  <div :class="(className ? className + '-wrapper ' : '') + 'autocomplete-wrapper'">
+  <div :class="(className ? className + '-wrapper ' : '') + 'autocomplete-wrapper col-md-2 filter-control'">
     <input  type="text"
             :id="id"
-            :class="(className ? className + '-input ' : '') + 'autocomplete-input'"
+            :class="(className ? className + '-input ' : '') + 'autocomplete-input form-control'"
             :placeholder="placeholder"
             v-model="type"
             @input="input(type)"
